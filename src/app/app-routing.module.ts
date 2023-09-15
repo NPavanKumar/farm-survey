@@ -6,7 +6,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'welcome', // TODO: Set this to ''
+    // redirectTo: 'welcome', // TODO: Set this to ''
+    redirectTo: 'signin', // TODO: Set this to ''
     pathMatch: 'full'
   },
   {
@@ -32,6 +33,11 @@ const routes: Routes = [
   {
     path: 'password-reset',
     loadChildren: () => import('./pages/public/password-reset/password-reset.module').then( m => m.PasswordResetPageModule),
+    // canActivate: [PublicGuard] // Prevent for signed in users
+  },
+  {
+    path: 'farm',
+    loadChildren: () => import('./farm/farm.module').then( m => m.FarmModule),
     // canActivate: [PublicGuard] // Prevent for signed in users
   },
 ];

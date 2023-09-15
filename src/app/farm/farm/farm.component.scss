@@ -1,0 +1,34 @@
+:host {
+    ion-list {
+      background-color: var(--ion-color-primary);
+    }
+  }
+  
+  
+  ion-select {
+    background-color: transparent;
+    color: #ffffff;
+    --placeholder-color: #ffffff;
+    --placeholder-opacity: 1;
+    justify-content: center;
+  }
+  
+  ion-select::part(placeholder),
+  ion-select::part(text) {
+    flex: 0 0 auto;
+  }
+  
+  ion-select::part(placeholder)::first-letter {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  ion-select::part(text) {
+    color: #ffffff;
+  }
+  
+  ion-select::part(icon) {
+    color: #ffffff;
+    opacity: 1;
+  }
+  

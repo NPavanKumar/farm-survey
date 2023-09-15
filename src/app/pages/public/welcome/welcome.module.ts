@@ -19,6 +19,9 @@ import { SwiperModule } from 'swiper/angular';
     WelcomePageRoutingModule,
     SwiperModule
   ],
-  declarations: [WelcomePage]
+  declarations: [WelcomePage],
+  exports: [
+
+  ]
 })
 export class WelcomePageModule {}
